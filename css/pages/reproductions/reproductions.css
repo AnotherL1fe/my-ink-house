@@ -1,0 +1,78 @@
+.reproductions__container{
+    width: 1110px;
+    height: 1564px;
+    gap: 30px;
+}
+
+.reproductions__header{
+    justify-content: space-between;
+    width: 1110px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reproductions__title{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--stretch-limo);
+    width: 259px;
+    height: 44px;
+}
+
+.reproductions__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 428px;
+    height: 43px;
+    gap: 32px;
+}
+
+.reproductions__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 126px;
+    height: 43px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: var(--fonoviy);
+}
+
+.reproductions__btn{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--black);
+    background-color: var(--fonoviy);
+}
+
+.reproductions__gallery{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+    overflow: visible
+}
+
+.gallery__painting{
+    width: 350px;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--molten-ice);
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.gallery_image {
+    width: 310px;
+    height: 422px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
