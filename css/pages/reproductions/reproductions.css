@@ -35,14 +35,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 126px;
-    height: 43px;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: var(--fonoviy);
 }
 
 .reproductions__btn{
+    border-radius: 20px;
+    padding: 10px 20px;
     font-family: Raleway, sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -50,10 +47,27 @@
     background-color: var(--fonoviy);
 }
 
+.reproductions__btn:hover{
+    background-color: var(--mudroch);
+    color: var(--white);
+}
+
+.reproductions__btn:active{
+    background-color: var(--forest-serenade);
+    color: var(--white);
+}
+
+.reproductions__btn:focus{
+    color: var(--black);
+    background-color: var(--fonoviy);
+    border-color: var(--mudroch);
+}
+
 .reproductions__gallery{
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 30px;
     padding: 0;
     list-style: none;
@@ -61,18 +75,84 @@
 }
 
 .gallery__painting{
-    width: 350px;
-    height: 730px;
     display: flex;
+    padding: 20px 20px 30px 20px;
     flex-direction: column;
     background-color: var(--molten-ice);
     box-sizing: border-box;
-    justify-content: space-around;
 }
 
 .gallery_image {
     width: 310px;
-    height: 422px;
-    padding-left: 20px;
+    height: auto;
+}
+
+.gallery__author{
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: auto;
+    height: 21px;
     padding-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    color: var(--sandstone-grey-green);
+}
+
+.gallery__title{
+    font-family: Raleway, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    width: 310px;
+    height: 35px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.gallery__characteristic{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    width: 310px;
+    height: 21px;
+    margin-bottom: 30px;
+    color: var(--black)
+}
+
+.gallery__price{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    width: auto;
+    height: 28px;
+    margin-bottom: 20px;
+    color: var(--mudroch);
+}
+
+.gallery__btn{
+    font-family: Raleway,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--molten-ice);
+    color: var(--mudroch);
+    width: 310px;
+    height: 65px;
+    padding: 20px 60px 20px 60px;
+    gap: 6px;
+    border: 1px solid var(--mudroch);
+}
+
+.gallery__btn:hover{
+    background-color: var(--mudroch);
+    color: var(--white);
+}
+
+.gallery__btn:focus{
+    background-color: var(--fonoviy);
+    color: var(--mudroch);
+}
+
+.gallery__btn:active{
+    background-color: var(--forest-serenade);
+    color: var(--white);
 }
